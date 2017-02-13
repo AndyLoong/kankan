@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="video_gionee_app_name">Video</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="video_gionee_name">Video</string>
+    <string name="video_gionee_hot_video">HotSearch</string>
+    <string name="video_gionee_mine_download">DownLoad</string>
+    <string name="video_gionee_look_video">history</string>
+    <string name="video_gionee_ranking">Ranking</string>
+    <string name="video_gionee_more">More</string>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tencent_reading_navigation_bar_top"
+    tools:context="com.tencent.activity.CardActivity">
+    <RelativeLayout
+        android:id="@+id/tencent_reading_title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <!-- left -->
+        <ImageView
+            android:id="@+id/tencent_reading_web_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tencent_reading_title_back_btn"/>
+
+        <!-- right -->
+        <TextView
+            android:id="@+id/tencent_reading_btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/tencent_reading_title_share_btn"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="" />
+
+    </RelativeLayout>
+    <com.tencent.readsdk.module.home.main.BaseWebView
+        android:id="@+id/tencent_reading_webview"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tencent_reading_title_bar"
+        android:layout_height="match_parent">
+    </com.tencent.readsdk.module.home.main.BaseWebView>
+    <ImageView
+        android:id="@+id/webview_top_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tencent_reading_title_bar"
+        android:background="@drawable/tencent_reading_top_shadow_bg"
+        android:contentDescription="@null" />
+
+    <ProgressBar
+        android:id="@+id/tencent_reading_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_error_layout"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_below="@id/tencent_reading_title_bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/tencent_reading_web_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tencent_reading_net_error"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_marginTop="5dp"
+            android:text="点击屏幕重新加载"/>
+    </LinearLayout>
+</RelativeLayout>

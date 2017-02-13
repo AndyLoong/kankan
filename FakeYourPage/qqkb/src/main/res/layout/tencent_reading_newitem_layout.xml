@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="7dp"
+    android:background="#1effffff"
+    android:layout_height="75dp">
+
+    <com.tencent.readsdk.job.image.AsyncImageView
+        android:id="@+id/tencent_reading_pic"
+        android:layout_width="90dp"
+        android:layout_height="61dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="7dp" />
+    <TextView
+        android:id="@+id/tencent_reading_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="7dp"
+        android:lines="2"
+        android:textColor="#ddffffff"
+        android:layout_toRightOf="@id/tencent_reading_pic"
+        android:text="天天快报是个很好用的产品大家都来用吧 大家都来用吧大家都来用吧"/>
+    <TextView
+        android:id="@+id/tencent_reading_orignal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#66ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tencent_reading_title"
+        android:layout_toRightOf="@id/tencent_reading_pic"
+        android:text="中国青年报"/>
+
+    <TextView
+        android:id="@+id/tencent_reading_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tencent_reading_title"
+        android:layout_alignParentRight="true"
+        android:textColor="#66ffffff"
+        android:text="3分钟之前"/>
+    <View
+        android:id="@+id/tencent_reading_divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="#0dffffff"/>
+</RelativeLayout>

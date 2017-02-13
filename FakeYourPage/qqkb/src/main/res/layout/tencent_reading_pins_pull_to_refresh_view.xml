@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pins_pull_to_refresh_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.tencent.readsdk.module.home.pull.ObservableScrollView
+        android:id="@+id/pins_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdgeLength="0px" >
+
+        <LinearLayout
+            android:id="@+id/root_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.tencent.readsdk.module.home.pull.PullHeadView
+                android:id="@+id/pull_head_view"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp" />
+            <LinearLayout
+                android:id="@+id/news_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+    </com.tencent.readsdk.module.home.pull.ObservableScrollView>
+
+</LinearLayout>

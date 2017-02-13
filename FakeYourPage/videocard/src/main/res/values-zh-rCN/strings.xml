@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="video_gionee_app_name">视频</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="video_gionee_name">视频</string>
+    <string name="video_gionee_hot_video">热搜影视</string>
+    <string name="video_gionee_mine_download">我的缓存</string>
+    <string name="video_gionee_look_video">观看历史</string>
+    <string name="video_gionee_ranking">今日排行</string>
+     <string name="video_gionee_more">更多</string>
+
+
+</resources>

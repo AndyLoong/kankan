@@ -1,0 +1,6 @@
+<resources>
+    <!-- 透明背景的主题. -->
+    <style name="Theme.Transparent" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>
