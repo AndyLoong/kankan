@@ -1,0 +1,27 @@
+使用Android Studio
+
+
+一.　FakeLauncher--对应实际的桌面，用来模拟桌面，不需要修改该工程
+直接运行安装或者安装FakeLauncher.apk
+
+如果使用了FakeLauncher的Context，需要在manifest文件中添加权限；
+注意：FakeLauncher工程只能添加权限，不能做额外修改。
+
+
+
+二.　FakeYourPage--对应实际的桌面看看，用来集成第三方卡片，在桌面显示
+
+1.
+YourPageView.java
+第51行左右, KbManager是对第三方实现了金立接口的进一步封装．
+金立接口是指－－IGioneeCardViewInterface,直接依赖depencylib模块即可因为该接口.
+
+2.
+qqkb模块是天天快报卡片提供是jar和资源
+在qqkb模块中有个manifest.xml，加上自己需要的权限，注册对应的组件:activity和service
+
+第三方自己修改对应的module方便本地测试
+
+
+
+
