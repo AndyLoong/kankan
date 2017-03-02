@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="calendar_title">日历</string>
+    <string name="calendar_create_new_agenda">新建</string>
+
+    <string name="calendar_agenda_time_allday">全天</string>
+    <string name="calendar_agenda_time_start">"%s 开始"</string>
+    <string name="calendar_agenda_time_end">"%s 结束"</string>
+
+</resources>

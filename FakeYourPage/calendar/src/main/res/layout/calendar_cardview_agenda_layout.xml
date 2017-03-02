@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/calendar_agenda_one_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calendar_agenda_content_background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/calendar_cardview_divider_layout" />
+
+        <RelativeLayout
+            android:id="@+id/calendar_agenda_one_content"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/calendar_agenda_one_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/calendar_agenda_start_time_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/calendar_agenda_one_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/calendar_agenda_end_time_color"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/calendar_agenda_one_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_agenda_one_start_time"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/calendar_agenda_name_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_agenda_two_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calendar_agenda_content_background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/calendar_cardview_divider_layout" />
+
+        <RelativeLayout
+            android:id="@+id/calendar_agenda_two_content"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/calendar_agenda_two_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/calendar_agenda_start_time_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/calendar_agenda_two_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/calendar_agenda_end_time_color"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/calendar_agenda_two_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_agenda_two_start_time"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/calendar_agenda_name_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_agenda_almanac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calendar_agenda_content_background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/calendar_cardview_divider_layout" />
+
+        <FrameLayout
+            android:id="@+id/calendar_agenda_almanac_content"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="9dp"
+            android:paddingRight="14dp">
+
+            <ImageView
+                android:id="@+id/calendar_agenda_almanac_content_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/calendar_almanac_fit" />
+
+            <TextView
+                android:id="@+id/calendar_agenda_almanac_content_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="45dp"
+                android:textColor="@color/calendar_agenda_almanac_text_color"
+                android:textSize="14dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calendar_agenda_create_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/calendar_cardview_divider_layout" />
+
+        <TextView
+            android:id="@+id/calendar_agenda_create"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/calendar_create_new_agenda"
+            android:textColor="@color/calendar_agenda_create_text_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

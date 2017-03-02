@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.calendar.cardview">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <application android:supportsRtl="true">
+
+        <meta-data
+            android:name="AmigoAlarmAlignPermissioin"
+            android:value="6253247A8FCF5ABFFBE7CD1DC43557655CF1F91955E62FC3AE65BE6235D1E344" />
+
+    </application>
+
+</manifest>

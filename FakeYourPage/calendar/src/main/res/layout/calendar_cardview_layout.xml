@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/calendar_weather"
+        layout="@layout/calendar_cardview_weather_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+
+    <include
+        android:id="@+id/calendar_week"
+        android:layout_width="match_parent"
+        layout="@layout/calendar_cardview_week_layout"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/calendar_agenda"
+        layout="@layout/calendar_cardview_agenda_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

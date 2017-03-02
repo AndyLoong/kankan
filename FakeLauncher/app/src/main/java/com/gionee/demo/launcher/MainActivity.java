@@ -1,8 +1,11 @@
 package com.gionee.demo.launcher;
 
+import android.Manifest;
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -33,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
         }else{
             Toast.makeText(this, "启动伪桌面看看失败", Toast.LENGTH_LONG).show();
         }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestPermissions(new String[]{Manifest.permission.READ_CALENDAR}, 0);
+        }
     }
 
     @Override
@@ -62,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             Constructor constructor = clazz.getConstructor(Context.class, Context.class);
             return (View) constructor.newInstance(this, packContext);
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.d("Andy", "getView Exception: e = "+ e.toString());
         }
         return null;
     }

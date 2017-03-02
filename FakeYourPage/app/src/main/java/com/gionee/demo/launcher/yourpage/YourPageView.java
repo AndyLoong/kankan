@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.calendar.cardview.CardViewProxy;
 import com.gionee.demo.launcher.yourpage.callbacks.IYourPageInterface;
 import com.gionee.demo.launcher.yourpage.manager.KbManager;
 import com.gionee.yourspage.cardinterface.IGioneeCardViewInterface;
@@ -49,7 +50,10 @@ public class YourPageView extends ViewGroup implements IYourPageInterface {
 //        mCardView = new AmapCardManager(applicationContext, context);
 
         // TODO 代理第三方卡片--天天快报
-        mCardView = new KbManager(applicationContext, context);
+        //mCardView = new KbManager(applicationContext, context);
+
+        //TODO 日历卡片：天气、行程、黄历
+        mCardView = new CardViewProxy(applicationContext, context);
 
         // getCardView
         View card = mCardView.getCardView(context);

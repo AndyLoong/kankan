@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="calendar_weather_background">#20ffffff</color>
+    <color name="calendar_weather_title_color">#7fffffff</color>
+    <color name="calendar_weather_content_color">#ffffff</color>
+    <color name="calendar_agenda_content_background">#1effffff</color>
+    <color name="calendar_week_background">#1effffff</color>
+    <color name="calendar_agenda_start_time_color">#e5ffffff</color>
+    <color name="calendar_agenda_end_time_color">#33ffffff</color>
+    <color name="calendar_agenda_name_color">#b2ffffff</color>
+    <color name="calendar_agenda_almanac_text_color">#ddffffff</color>
+    <color name="calendar_agenda_create_background">#20ffffff</color>
+    <color name="calendar_agenda_create_text_color">#7fffffff</color>
+
+    <color name="calendar_item_divider_color">#20ffffff</color>
+
+</resources>

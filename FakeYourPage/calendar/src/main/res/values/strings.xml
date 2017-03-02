@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="calendar_title">Calendar</string>
+    <string name="calendar_create_new_agenda">Create</string>
+
+    <string name="calendar_agenda_time_allday">All day</string>
+    <string name="calendar_agenda_time_start">"%s start"</string>
+    <string name="calendar_agenda_time_end">"%s end"</string>
+
+</resources>
